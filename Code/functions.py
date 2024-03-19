@@ -1,12 +1,6 @@
 csv_data_list = []  # Used for format student function 
 # testing haha
 # Funcction used for menu header [no issues]
-def display(header):
-    header_txt = (f"*** {header} ***")
-    print("************************************************************")
-    print(f'{header_txt:^60}')
-    print("************************************************************")
-
 
 # Function prints main menu [no issues]
 def print_menu():
