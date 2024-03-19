@@ -32,7 +32,8 @@ def main():
         if main_menu_choice == "L": # List  student option
 
             # put logic for option L
-            pass
+            
+            ()
 
         elif main_menu_choice == "A":  # Add student option
             functions.add_student()

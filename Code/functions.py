@@ -1,6 +1,12 @@
 csv_data_list = []  # Used for format student function 
-# testing haha
+
 # Funcction used for menu header [no issues]
+def display(header):
+    header_txt = (f"*** {header} ***")
+    print("************************************************************")
+    print(f'{header_txt:^60}')
+    print("************************************************************")
+
 
 # Function prints main menu [no issues]
 def print_menu():
@@ -18,10 +24,8 @@ def print_menu():
     main_menu_keys = list(main_menu.keys())
 
     # Declare main header message and use function for header
-    header_txt = ("*** Welcome to Student GPA System ! ***")
-    print("************************************************************")
-    print(f'{header_txt:^60}')
-    print("************************************************************")
+    header = "Welcome to Student GPA System !"
+    display(header)
 
     # display list of options for main menu
     for i in range(len((main_menu_keys))):
@@ -103,4 +107,3 @@ def add_student():
         print(f'ID:{new_id} is already in use')
 
     format_student(student_info)
-
